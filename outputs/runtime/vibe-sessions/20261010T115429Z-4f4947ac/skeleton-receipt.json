@@ -1,0 +1,64 @@
+{
+    "stage":  "skeleton_check",
+    "run_id":  "20261010T115429Z-4f4947ac",
+    "mode":  "interactive_governed",
+    "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+    "generated_at":  "2026-10-10T11:54:31Z",
+    "repo_root":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe",
+    "git_branch":  "",
+    "git_status":  [
+
+                   ],
+    "required_paths":  [
+                           {
+                               "path":  "SKILL.md",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "protocols/runtime.md",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "protocols/think.md",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "protocols/do.md",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "protocols/team.md",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "protocols/retro.md",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "config/runtime-contract.json",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "config/runtime-modes.json",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "config/requirement-doc-policy.json",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "config/plan-execution-policy.json",
+                               "exists":  true
+                           },
+                           {
+                               "path":  "config/phase-cleanup-policy.json",
+                               "exists":  true
+                           }
+                       ],
+    "existing_requirement_docs":  [
+                                      "2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md"
+                                  ],
+    "existing_plan_docs":  [
+
+                           ]
+}

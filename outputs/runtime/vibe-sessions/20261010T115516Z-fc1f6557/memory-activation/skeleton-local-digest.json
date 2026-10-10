@@ -1,0 +1,17 @@
+{
+    "stage":  "skeleton_check",
+    "owner":  "state_store",
+    "status":  "fallback_local_digest",
+    "generated_at":  "2026-10-10T11:57:43Z",
+    "source_receipt_path":  "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\skeleton-receipt.json",
+    "items":  [
+                  "Task focus: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel....",
+                  "Git branch: ",
+                  "All required governed runtime prerequisite paths are present."
+              ],
+    "budget":  {
+                   "top_k":  3,
+                   "max_tokens":  96,
+                   "max_chars_per_item":  220
+               }
+}

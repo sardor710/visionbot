@@ -1,0 +1,71 @@
+{
+    "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+    "relations":  [
+                      {
+                          "source":  "create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m",
+                          "relation":  "specified_by",
+                          "target":  "2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+                          "evidence_paths":  [
+                                                 "D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md"
+                                             ],
+                          "keywords":  [
+                                           "create",
+                                           "telegram",
+                                           "bot",
+                                           "which",
+                                           "works",
+                                           "via",
+                                           "telephoto",
+                                           "that",
+                                           "signs",
+                                           "account",
+                                           "and",
+                                           "download"
+                                       ]
+                      },
+                      {
+                          "source":  "create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m",
+                          "relation":  "planned_in",
+                          "target":  "2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+                          "evidence_paths":  [
+                                                 "D:\\projects\\private bot\\docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md"
+                                             ],
+                          "keywords":  [
+                                           "create",
+                                           "telegram",
+                                           "bot",
+                                           "which",
+                                           "works",
+                                           "via",
+                                           "telephoto",
+                                           "that",
+                                           "signs",
+                                           "account",
+                                           "and",
+                                           "download"
+                                       ]
+                      },
+                      {
+                          "source":  "create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m",
+                          "relation":  "executed_as",
+                          "target":  "execution-manifest.json",
+                          "evidence_paths":  [
+                                                 "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json"
+                                             ],
+                          "keywords":  [
+                                           "create",
+                                           "telegram",
+                                           "bot",
+                                           "which",
+                                           "works",
+                                           "via",
+                                           "telephoto",
+                                           "that",
+                                           "signs",
+                                           "account",
+                                           "and",
+                                           "download"
+                                       ]
+                      }
+                  ]
+}

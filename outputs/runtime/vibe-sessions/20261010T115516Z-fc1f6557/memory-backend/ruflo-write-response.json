@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "status": "backend_write",
+  "lane": "ruflo",
+  "store_path": "D:\\projects\\private bot\\.vibeskills\\memory\\workspace-memory-plane.jsonl",
+  "project_key": "private bot",
+  "project_key_source": "workspace_plane",
+  "item_count": 1,
+  "items": [
+    "Persisted ruflo handoff card: XL module handoff for 20261010T115516Z-fc1f6557: completed 4 units with 0 failures and 0 blocks."
+  ],
+  "capsule_count": 1,
+  "capsules": [
+    {
+      "capsule_id": "22ea279c73e5f139",
+      "owner": "ruflo",
+      "lane": "ruflo",
+      "kind": "handoff_card",
+      "disclosure_level": "bounded",
+      "summary": "XL module handoff for 20261010T115516Z-fc1f6557: completed 4 units with 0 failures and 0 blocks.",
+      "updated_at": "2026-10-10T11:57:44Z"
+    }
+  ],
+  "suppressed_count": 0,
+  "workspace_memory_plane": {
+    "schema_version": 1,
+    "workspace_root": "D:\\projects\\private bot",
+    "workspace_sidecar_root": "D:\\projects\\private bot\\.vibeskills",
+    "descriptor_path": "D:\\projects\\private bot\\.vibeskills\\project.json",
+    "workspace_id": "ws:bee829b28982e3424e22784c",
+    "plane_path": "D:\\projects\\private bot\\.vibeskills\\memory\\workspace-memory-plane.jsonl"
+  },
+  "driver_mode": "compatibility_shell",
+  "generated_at": "2026-10-10T11:57:44Z"
+}

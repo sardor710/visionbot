@@ -1,0 +1,11 @@
+{
+    "stage":  "plan_execute",
+    "owner":  "state_store",
+    "status":  "fallback_local_artifact",
+    "generated_at":  "2026-10-10T11:57:44Z",
+    "source_execution_manifest":  "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json",
+    "items":  [
+                  "Execution status: completed",
+                  "Module handoff status: agent_results_received"
+              ]
+}

@@ -1,0 +1,57 @@
+# Environment and credentials
+.env
+*.env
+*.session
+*.session-journal
+
+# Downloads and media files
+downloads/
+*.mp4
+*.m4v
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.vibeskills/

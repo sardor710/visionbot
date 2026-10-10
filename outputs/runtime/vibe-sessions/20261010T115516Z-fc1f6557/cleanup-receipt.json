@@ -1,0 +1,34 @@
+{
+    "stage":  "phase_cleanup",
+    "run_id":  "20261010T115516Z-fc1f6557",
+    "mode":  "interactive_governed",
+    "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+    "cleanup_mode":  "receipt_only",
+    "cleanup_admitted":  true,
+    "default_bounded_cleanup_applied":  false,
+    "execute_governance_cleanup_requested":  false,
+    "managed_node_cleanup_applied":  false,
+    "generated_at":  "2026-10-10T11:57:43Z",
+    "cleanup_result":  {
+                           "performed":  false,
+                           "reason":  "no_cleanup_action_requested"
+                       },
+    "cleanup_error":  null,
+    "delivery_acceptance":  {
+                                "report_path":  "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\delivery-acceptance-report.json",
+                                "markdown_path":  "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\delivery-acceptance-report.md",
+                                "gate_result":  "PASS",
+                                "completion_language_allowed":  true,
+                                "runtime_status":  "completed",
+                                "readiness_state":  "fully_ready",
+                                "manual_review_layer_count":  0,
+                                "failing_layer_count":  0,
+                                "forbidden_completion_hit_count":  0,
+                                "incomplete_layers":  [
+
+                                                      ],
+                                "command_exit_code":  0
+                            },
+    "delivery_acceptance_error":  null,
+    "proof_class":  "runtime"
+}

@@ -1,0 +1,204 @@
+{
+    "schema_version":  "module_work_plan_v1",
+    "source_run_id":  "20261010T115516Z-fc1f6557",
+    "requirement_digest":  "47aa41500c658d0b086919b07668a69c18e43398a06246a890c1b04b1950a638",
+    "organization_digest":  "1eb88e0725042111efbc4e51d275ab2eaecd893cb734be81ad1c58aa9e4e8377",
+    "workflow_level":  "XL",
+    "modules":  [
+                    {
+                        "module_id":  "module_telegram_core",
+                        "goal":  "Implement Telethon client session configuration, MTProto authentication, and URL/entity parser for Telegram posts, stories, usernames, and channel IDs.",
+                        "required":  true,
+                        "depends_on":  [
+
+                                       ],
+                        "execution_mode":  "skill_assigned",
+                        "write_scope":  "src/telebot_downloader/core/**",
+                        "expected_outputs":  [
+                                                 "src/telebot_downloader/core/client.py",
+                                                 "src/telebot_downloader/core/parser.py"
+                                             ],
+                        "verification":  [
+                                             "py -3 -m pytest tests/test_parser.py"
+                                         ],
+                        "gap_reason":  null,
+                        "acceptance_criteria":  [
+                                                    {
+                                                        "criterion_id":  "core-auth-and-parsing",
+                                                        "description":  "Telethon client config loads credentials and entity/link parser accurately extracts post, story, channel, and user identifiers.",
+                                                        "verification_mode":  "automated"
+                                                    }
+                                                ]
+                    },
+                    {
+                        "module_id":  "module_downloader_engine",
+                        "goal":  "Implement downloading engine for channel posts, user stories (all vs last 24 hours), and media extraction with captions and timestamps.",
+                        "required":  true,
+                        "depends_on":  [
+                                           "module_telegram_core"
+                                       ],
+                        "execution_mode":  "skill_assigned",
+                        "write_scope":  "src/telebot_downloader/downloader/**",
+                        "expected_outputs":  [
+                                                 "src/telebot_downloader/downloader/engine.py",
+                                                 "src/telebot_downloader/downloader/stories.py"
+                                             ],
+                        "verification":  [
+                                             "py -3 -m pytest tests/test_downloader.py"
+                                         ],
+                        "gap_reason":  null,
+                        "acceptance_criteria":  [
+                                                    {
+                                                        "criterion_id":  "downloader-engine-features",
+                                                        "description":  "Engine successfully fetches posts, photos, videos, stories with 24h filter and captures caption/date metadata.",
+                                                        "verification_mode":  "automated"
+                                                    }
+                                                ]
+                    },
+                    {
+                        "module_id":  "module_bot_interface",
+                        "goal":  "Implement Telegram bot interaction handler allowing users to send links, channel IDs, and usernames via bot commands.",
+                        "required":  true,
+                        "depends_on":  [
+                                           "module_downloader_engine"
+                                       ],
+                        "execution_mode":  "skill_assigned",
+                        "write_scope":  "src/telebot_downloader/bot/**",
+                        "expected_outputs":  [
+                                                 "src/telebot_downloader/bot/handlers.py",
+                                                 "src/telebot_downloader/main.py"
+                                             ],
+                        "verification":  [
+                                             "py -3 -m pytest tests/test_bot.py"
+                                         ],
+                        "gap_reason":  null,
+                        "acceptance_criteria":  [
+                                                    {
+                                                        "criterion_id":  "bot-command-handling",
+                                                        "description":  "Bot commands and incoming messages dispatch to the download engine and return download progress to user.",
+                                                        "verification_mode":  "automated"
+                                                    }
+                                                ]
+                    },
+                    {
+                        "module_id":  "module_test_verification",
+                        "goal":  "Develop and run comprehensive unit and mock integration test suite following TDD methodology.",
+                        "required":  true,
+                        "depends_on":  [
+                                           "module_bot_interface"
+                                       ],
+                        "execution_mode":  "skill_assigned",
+                        "write_scope":  "tests/**",
+                        "expected_outputs":  [
+                                                 "tests/test_parser.py",
+                                                 "tests/test_downloader.py",
+                                                 "tests/test_bot.py"
+                                             ],
+                        "verification":  [
+                                             "py -3 -m pytest tests/"
+                                         ],
+                        "gap_reason":  null,
+                        "acceptance_criteria":  [
+                                                    {
+                                                        "criterion_id":  "full-test-verification",
+                                                        "description":  "All unit tests pass verifying parsing, story time filtering, metadata extraction, and bot commands.",
+                                                        "verification_mode":  "automated"
+                                                    }
+                                                ]
+                    }
+                ],
+    "work_units":  [
+                       {
+                           "unit_id":  "module_telegram_core--python-pro--owner",
+                           "module_id":  "module_telegram_core",
+                           "skill_id":  "python-pro",
+                           "role":  "owner",
+                           "responsibility":  "Implement Telethon client session, authentication, and URL/entity parser.",
+                           "write_scope":  "src/telebot_downloader/core/**",
+                           "depends_on_unit_ids":  [
+
+                                                   ],
+                           "expected_outputs":  [
+                                                    "src/telebot_downloader/core/client.py",
+                                                    "src/telebot_downloader/core/parser.py"
+                                                ],
+                           "verification":  [
+                                                "py -3 -m pytest tests/test_parser.py"
+                                            ],
+                           "stage_order":  1,
+                           "phase_id":  "module-stage-1"
+                       },
+                       {
+                           "unit_id":  "module_downloader_engine--python-pro--owner",
+                           "module_id":  "module_downloader_engine",
+                           "skill_id":  "python-pro",
+                           "role":  "owner",
+                           "responsibility":  "Implement media downloading, metadata extraction (captions, date), and story filtering (24h/all).",
+                           "write_scope":  "src/telebot_downloader/downloader/**",
+                           "depends_on_unit_ids":  [
+                                                       "module_telegram_core--python-pro--owner"
+                                                   ],
+                           "expected_outputs":  [
+                                                    "src/telebot_downloader/downloader/engine.py",
+                                                    "src/telebot_downloader/downloader/stories.py"
+                                                ],
+                           "verification":  [
+                                                "py -3 -m pytest tests/test_downloader.py"
+                                            ],
+                           "stage_order":  2,
+                           "phase_id":  "module-stage-2"
+                       },
+                       {
+                           "unit_id":  "module_bot_interface--python-pro--owner",
+                           "module_id":  "module_bot_interface",
+                           "skill_id":  "python-pro",
+                           "role":  "owner",
+                           "responsibility":  "Implement Telegram bot interaction handlers and main application entrypoint.",
+                           "write_scope":  "src/telebot_downloader/bot/**",
+                           "depends_on_unit_ids":  [
+                                                       "module_downloader_engine--python-pro--owner"
+                                                   ],
+                           "expected_outputs":  [
+                                                    "src/telebot_downloader/bot/handlers.py",
+                                                    "src/telebot_downloader/main.py"
+                                                ],
+                           "verification":  [
+                                                "py -3 -m pytest tests/test_bot.py"
+                                            ],
+                           "stage_order":  3,
+                           "phase_id":  "module-stage-3"
+                       },
+                       {
+                           "unit_id":  "module_test_verification--test-driven-development--owner",
+                           "module_id":  "module_test_verification",
+                           "skill_id":  "test-driven-development",
+                           "role":  "owner",
+                           "responsibility":  "Design and execute TDD test harness covering parser, story 24h filtering, and download orchestrator.",
+                           "write_scope":  "tests/**",
+                           "depends_on_unit_ids":  [
+                                                       "module_bot_interface--python-pro--owner"
+                                                   ],
+                           "expected_outputs":  [
+                                                    "tests/test_parser.py",
+                                                    "tests/test_downloader.py",
+                                                    "tests/test_bot.py"
+                                                ],
+                           "verification":  [
+                                                "py -3 -m pytest tests/"
+                                            ],
+                           "stage_order":  4,
+                           "phase_id":  "module-stage-4"
+                       }
+                   ],
+    "code_task_tdd_evidence_requirements":  [
+                                                "Record failing-first evidence for the changed behavior before implementation or defect correction.",
+                                                "Record the green rerun that proves the targeted behavior passed after implementation.",
+                                                "Map the changed behavior to targeted verification evidence; generic suite success alone is insufficient.",
+                                                "If automated failing-first evidence is not appropriate, freeze and honor an explicit code-task TDD exception instead of silently skipping the requirement.",
+                                                "Do not create separate M/L/XL entry commands.",
+                                                "Do not introduce a second router or control plane."
+                                            ],
+    "code_task_tdd_exceptions":  [
+
+                                 ]
+}

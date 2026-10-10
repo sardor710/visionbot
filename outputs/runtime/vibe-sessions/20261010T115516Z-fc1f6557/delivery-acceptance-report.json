@@ -1,0 +1,302 @@
+{
+  "evaluated_at": "2026-10-10T11:57:43Z",
+  "contract_id": "vibe-project-delivery-acceptance-v6",
+  "contract_version": 6,
+  "session_root": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557",
+  "artifacts": {
+    "execute_receipt_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\phase-execute.json",
+    "cleanup_receipt_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json",
+    "requirement_doc_path": "D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+    "execution_plan_path": "D:\\projects\\private bot\\docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+    "execution_manifest_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json",
+    "runtime_input_packet_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\runtime-input-packet.json",
+    "module_execution_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json"
+  },
+  "summary": {
+    "gate_result": "PASS",
+    "completion_language_allowed": true,
+    "runtime_status": "completed",
+    "readiness_state": "fully_ready",
+    "manual_review_layer_count": 0,
+    "failing_layer_count": 0,
+    "degraded_layer_count": 0,
+    "forbidden_completion_hit_count": 0,
+    "incomplete_layers": [],
+    "manual_spot_check_count": 0,
+    "code_task_tdd_evidence_requirement_count": 6,
+    "artifact_review_requirement_count": 0,
+    "baseline_document_quality_dimension_count": 0,
+    "baseline_ui_quality_dimension_count": 0
+  },
+  "truth_results": {
+    "governance_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\phase-execute.json",
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json",
+        "D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+        "D:\\projects\\private bot\\docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json"
+      ],
+      "notes": "",
+      "details": {}
+    },
+    "engineering_verification_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json"
+      ],
+      "notes": "",
+      "details": {}
+    },
+    "code_task_tdd_evidence_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json",
+        "outputs/tdd_red_phase.log",
+        "outputs/tdd_green_phase.log"
+      ],
+      "notes": "Red phase tests failed with ModuleNotFoundError before modules were created; green phase verified all 16 tests passing after implementation.",
+      "details": {}
+    },
+    "workflow_completion_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\phase-execute.json",
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json",
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-work-plan.json",
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json"
+      ],
+      "notes": "Approved module work is complete in module-execution.json.",
+      "details": {}
+    },
+    "artifact_review_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [],
+      "notes": "",
+      "details": {}
+    },
+    "product_acceptance_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [
+        "D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md"
+      ],
+      "notes": "",
+      "details": {}
+    },
+    "module_acceptance_truth": {
+      "state": "passing",
+      "success": true,
+      "completion_language_allowed": true,
+      "evidence": [
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-work-plan.json",
+        "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json"
+      ],
+      "notes": "All required modules are complete and accepted by their criteria.",
+      "details": {}
+    }
+  },
+  "completed_module_work": [
+    {
+      "skill_id": "python-pro",
+      "unit_id": "module_telegram_core--python-pro--owner",
+      "module_id": "module_telegram_core"
+    },
+    {
+      "skill_id": "python-pro",
+      "unit_id": "module_downloader_engine--python-pro--owner",
+      "module_id": "module_downloader_engine"
+    },
+    {
+      "skill_id": "python-pro",
+      "unit_id": "module_bot_interface--python-pro--owner",
+      "module_id": "module_bot_interface"
+    },
+    {
+      "skill_id": "test-driven-development",
+      "unit_id": "module_test_verification--test-driven-development--owner",
+      "module_id": "module_test_verification"
+    }
+  ],
+  "artifact_review_coverage": {
+    "covered_baseline_document_quality_dimensions": [],
+    "missing_baseline_document_quality_dimensions": [],
+    "covered_baseline_ui_quality_dimensions": [],
+    "missing_baseline_ui_quality_dimensions": [],
+    "covered_task_specific_acceptance_extensions": [],
+    "missing_task_specific_acceptance_extensions": [],
+    "considered_research_augmentation_sources": [],
+    "missing_research_augmentation_sources": []
+  },
+  "tdd_evidence_coverage": {
+    "covered_code_task_tdd_evidence_requirements": [
+      "Record failing-first evidence for the changed behavior before implementation or defect correction.",
+      "Record the green rerun that proves the targeted behavior passed after implementation.",
+      "Map the changed behavior to targeted verification evidence; generic suite success alone is insufficient.",
+      "If automated failing-first evidence is not appropriate, freeze and honor an explicit code-task TDD exception instead of silently skipping the requirement.",
+      "Do not create separate M/L/XL entry commands.",
+      "Do not introduce a second router or control plane."
+    ],
+    "missing_code_task_tdd_evidence_requirements": [],
+    "covered_code_task_tdd_exceptions": [],
+    "missing_code_task_tdd_exceptions": [],
+    "red_phase_evidence_paths": [
+      "outputs/tdd_red_phase.log"
+    ],
+    "green_phase_evidence_paths": [
+      "outputs/tdd_green_phase.log"
+    ],
+    "refactor_phase_evidence_paths": [
+      "outputs/tdd_green_phase.log"
+    ]
+  },
+  "frozen_requirement_sections": {
+    "product_acceptance_criteria": [
+      "Requirement document is frozen before execution.",
+      "Execution plan exists before task execution.",
+      "Verification evidence exists before completion claims.",
+      "Phase cleanup receipt is produced.",
+      "The delivered output must satisfy observable behavior implied by the frozen goal and deliverable, not only internal runtime progress.",
+      "Full completion wording is allowed only after downstream delivery truth is passing."
+    ],
+    "manual_spot_checks": [],
+    "completion_language_policy": [
+      "Full completion wording is allowed only when governance truth, engineering verification truth, workflow completion truth, and product acceptance truth are all passing.",
+      "`completed_with_failures`, degraded execution, or pending manual actions must be reported as non-complete states.",
+      "If manual spot checks remain pending, the run must be described as requiring manual review rather than fully ready."
+    ],
+    "delivery_truth_contract": [
+      "Governance truth: requirement, plan, execution, and cleanup artifacts remain traceable and authoritative.",
+      "Engineering verification truth: targeted verification passes or fails explicitly; silence does not count as success.",
+      "Workflow completion truth: planned units, delegated lanes, and specialist outputs reconcile back into the governed plan.",
+      "Product acceptance truth: observable deliverable behavior satisfies frozen acceptance criteria before full completion language is allowed."
+    ],
+    "artifact_review_requirements": [],
+    "code_task_tdd_evidence_requirements": [
+      "Record failing-first evidence for the changed behavior before implementation or defect correction.",
+      "Record the green rerun that proves the targeted behavior passed after implementation.",
+      "Map the changed behavior to targeted verification evidence; generic suite success alone is insufficient.",
+      "If automated failing-first evidence is not appropriate, freeze and honor an explicit code-task TDD exception instead of silently skipping the requirement.",
+      "Do not create separate M/L/XL entry commands.",
+      "Do not introduce a second router or control plane."
+    ],
+    "code_task_tdd_exceptions": [],
+    "baseline_document_quality_dimensions": [],
+    "baseline_ui_quality_dimensions": [],
+    "task_specific_acceptance_extensions": [],
+    "research_augmentation_sources": []
+  },
+  "execution_context": {
+    "run_id": "20261010T115516Z-fc1f6557",
+    "session_root": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557",
+    "governance_scope": "root",
+    "completion_claim_allowed": true,
+    "cleanup_mode": "receipt_only",
+    "execution_status": "completed",
+    "completed_unit_count": 4,
+    "failed_unit_count": 0,
+    "blocked_unit_count": 0,
+    "execution_plan_contains_delivery_acceptance_plan": true,
+    "tdd_evidence_source_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json",
+    "code_task_tdd_evidence_state": "passing",
+    "artifact_review_source_path": "",
+    "artifact_review_state": "passing",
+    "module_work_plan_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-work-plan.json",
+    "module_execution_path": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json",
+    "pending_module_work_unit_ids": [],
+    "pending_module_work_units": [],
+    "assigned_module_skill_ids": [
+      "python-pro",
+      "test-driven-development"
+    ],
+    "module_work_resolution_state": "completed",
+    "completed_module_work_unit_count": 4,
+    "blocked_module_work_unit_count": 0,
+    "failed_module_work_unit_count": 0,
+    "resolved_module_work_units": [
+      {
+        "unit_id": "module_telegram_core--python-pro--owner",
+        "module_id": "module_telegram_core",
+        "skill_id": "python-pro",
+        "role": "owner",
+        "state": "completed",
+        "result_summary": "Implemented Telethon client session configuration, MTProto authentication, and robust URL/entity parser for Telegram posts, stories, usernames, and channel IDs.",
+        "evidence_paths": [
+          "src/telebot_downloader/core/client.py",
+          "src/telebot_downloader/core/parser.py",
+          "outputs/tdd_green_phase.log"
+        ],
+        "verification_results": [
+          "tests/test_parser.py passed 7/7 tests"
+        ]
+      },
+      {
+        "unit_id": "module_downloader_engine--python-pro--owner",
+        "module_id": "module_downloader_engine",
+        "skill_id": "python-pro",
+        "role": "owner",
+        "state": "completed",
+        "result_summary": "Implemented media download orchestrator for channel posts and story downloader with 24-hour window vs all-time filtering, preserving captions and timestamps.",
+        "evidence_paths": [
+          "src/telebot_downloader/downloader/engine.py",
+          "src/telebot_downloader/downloader/stories.py",
+          "outputs/tdd_green_phase.log"
+        ],
+        "verification_results": [
+          "tests/test_downloader.py passed 3/3 tests"
+        ]
+      },
+      {
+        "unit_id": "module_bot_interface--python-pro--owner",
+        "module_id": "module_bot_interface",
+        "skill_id": "python-pro",
+        "role": "owner",
+        "state": "completed",
+        "result_summary": "Implemented Telegram bot interaction handlers and main CLI runner supporting --auth, --run, and --download modes.",
+        "evidence_paths": [
+          "src/telebot_downloader/bot/handlers.py",
+          "src/telebot_downloader/main.py",
+          "outputs/tdd_green_phase.log"
+        ],
+        "verification_results": [
+          "tests/test_bot.py passed 6/6 tests"
+        ]
+      },
+      {
+        "unit_id": "module_test_verification--test-driven-development--owner",
+        "module_id": "module_test_verification",
+        "skill_id": "test-driven-development",
+        "role": "owner",
+        "state": "completed",
+        "result_summary": "Executed full TDD test suite with failing-first red phase and passing green phase verifying 16 test cases across all modules.",
+        "evidence_paths": [
+          "tests/test_parser.py",
+          "tests/test_downloader.py",
+          "tests/test_bot.py",
+          "outputs/tdd_red_phase.log",
+          "outputs/tdd_green_phase.log"
+        ],
+        "verification_results": [
+          "16/16 tests passing in pytest"
+        ]
+      }
+    ],
+    "module_work_status": "module_work_completed",
+    "module_work_continuation_pending": false
+  },
+  "forbidden_completion_hits": [],
+  "manual_spot_checks": [],
+  "residual_risks": []
+}

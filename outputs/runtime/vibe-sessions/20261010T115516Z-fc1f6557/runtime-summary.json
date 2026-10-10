@@ -1,0 +1,169 @@
+{
+  "governance_scope": "root",
+  "mode": "interactive_governed",
+  "generated_at": "2026-10-10T11:57:45Z",
+  "artifact_root": "D:\\projects\\private bot",
+  "session_root": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557",
+  "session_root_relative": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557",
+  "hierarchy": {
+    "root_run_id": "20261010T115516Z-fc1f6557",
+    "parent_run_id": null,
+    "parent_unit_id": null,
+    "inherited_requirement_doc_path": null,
+    "inherited_execution_plan_path": null,
+    "delegation_envelope_path": null
+  },
+  "stage_order": [
+    "skeleton_check",
+    "deep_interview",
+    "requirement_doc",
+    "xl_plan",
+    "plan_execute",
+    "phase_cleanup"
+  ],
+  "executed_stage_order": [
+    "skeleton_check",
+    "deep_interview",
+    "requirement_doc",
+    "xl_plan",
+    "plan_execute",
+    "phase_cleanup"
+  ],
+  "terminal_stage": "phase_cleanup",
+  "storage": {
+    "workspace_root": "D:\\projects\\private bot",
+    "workspace_sidecar_root": "D:\\projects\\private bot\\.vibeskills",
+    "project_descriptor_path": "D:\\projects\\private bot\\.vibeskills\\project.json",
+    "artifact_root": "D:\\projects\\private bot",
+    "artifact_root_source": "explicit_override",
+    "default_workspace_sidecar_artifact_root": false,
+    "host_sidecar_root": "C:\\Users\\Freakman\\.agents\\.vibeskills",
+    "workspace_memory_identity_root": "D:\\projects\\private bot\\.vibeskills\\project.json",
+    "workspace_memory_identity_scope": "workspace",
+    "workspace_memory_driver_contract": "workspace_shared_memory_v1",
+    "workspace_memory_logical_owners": [
+      "state_store",
+      "serena",
+      "ruflo",
+      "cognee"
+    ]
+  },
+  "memory_activation": {
+    "policy_mode": "shadow",
+    "routing_contract": "advisory_first_post_route_only",
+    "fallback_event_count": 4,
+    "artifact_count": 8,
+    "budget_guard_respected": true
+  },
+  "delivery_acceptance": {
+    "gate_result": "PASS",
+    "completion_language_allowed": true,
+    "readiness_state": "fully_ready",
+    "manual_review_layer_count": 0,
+    "failing_layer_count": 0,
+    "runtime_status": "completed"
+  },
+  "host_stage_disclosure": null,
+  "host_user_briefing": {
+    "enabled": true,
+    "mode": "host_user_briefing",
+    "freeze_gate_passed": true,
+    "segment_count": 1,
+    "segments": [
+      {
+        "segment_id": "task_module_status",
+        "stage": "phase_cleanup",
+        "category": "completion",
+        "truth_layer": "module_acceptance_truth",
+        "status": "passing",
+        "gate_status": "PASS",
+        "rendered_text": "Task is complete.\n- Module acceptance: `passing`\n- Delivery gate: `PASS`\n- All required modules are complete and accepted by their criteria."
+      }
+    ],
+    "rendered_text": "Task is complete.\n- Module acceptance: `passing`\n- Delivery gate: `PASS`\n- All required modules are complete and accepted by their criteria."
+  },
+  "bounded_return_control": null,
+  "agent_execution_handoff": null,
+  "artifacts_relative": {
+    "skeleton_receipt": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\skeleton-receipt.json",
+    "runtime_input_packet": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\runtime-input-packet.json",
+    "governance_capsule": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\governance-capsule.json",
+    "stage_lineage": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\stage-lineage.json",
+    "intent_contract": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\intent-contract.json",
+    "requirement_doc": "docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+    "requirement_receipt": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\requirement-doc-receipt.json",
+    "execution_plan": "docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+    "execution_plan_receipt": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-plan-receipt.json",
+    "module_work_plan": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-work-plan.json",
+    "module_execution": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json",
+    "agent_execution_handoff": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\agent-execution-handoff.json",
+    "execute_receipt": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\phase-execute.json",
+    "execution_manifest": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json",
+    "host_stage_disclosure": null,
+    "host_user_briefing": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\host-user-briefing.md",
+    "cleanup_receipt": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json",
+    "delivery_acceptance_report": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\delivery-acceptance-report.json",
+    "delivery_acceptance_markdown": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\delivery-acceptance-report.md",
+    "memory_activation_report": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\memory-activation\\memory-activation-report.json",
+    "memory_activation_markdown": "outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\memory-activation\\memory-activation-report.md",
+    "delegation_envelope": null,
+    "delegation_validation_receipt": null
+  },
+  "run_id": "20261010T115516Z-fc1f6557",
+  "task": "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+  "truth_owner": "python",
+  "artifacts": {
+    "skeleton_receipt": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\skeleton-receipt.json",
+    "runtime_input_packet": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\runtime-input-packet.json",
+    "governance_capsule": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\governance-capsule.json",
+    "stage_lineage": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\stage-lineage.json",
+    "intent_contract": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\intent-contract.json",
+    "requirement_doc": "D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+    "requirement_receipt": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\requirement-doc-receipt.json",
+    "execution_plan": "D:\\projects\\private bot\\docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+    "execution_plan_receipt": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-plan-receipt.json",
+    "module_work_plan": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-work-plan.json",
+    "module_execution": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json",
+    "agent_execution_handoff": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\agent-execution-handoff.json",
+    "execute_receipt": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\phase-execute.json",
+    "execution_manifest": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json",
+    "host_stage_disclosure": null,
+    "host_user_briefing": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\host-user-briefing.md",
+    "cleanup_receipt": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json",
+    "delivery_acceptance_report": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\delivery-acceptance-report.json",
+    "delivery_acceptance_markdown": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\delivery-acceptance-report.md",
+    "memory_activation_report": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\memory-activation\\memory-activation-report.json",
+    "memory_activation_markdown": "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\memory-activation\\memory-activation-report.md",
+    "delegation_envelope": null,
+    "delegation_validation_receipt": null
+  },
+  "bound_skill_ids": [
+    "python-pro",
+    "test-driven-development"
+  ],
+  "completed_module_work": [
+    {
+      "skill_id": "python-pro",
+      "unit_id": "module_telegram_core--python-pro--owner",
+      "module_id": "module_telegram_core"
+    },
+    {
+      "skill_id": "python-pro",
+      "unit_id": "module_downloader_engine--python-pro--owner",
+      "module_id": "module_downloader_engine"
+    },
+    {
+      "skill_id": "python-pro",
+      "unit_id": "module_bot_interface--python-pro--owner",
+      "module_id": "module_bot_interface"
+    },
+    {
+      "skill_id": "test-driven-development",
+      "unit_id": "module_test_verification--test-driven-development--owner",
+      "module_id": "module_test_verification"
+    }
+  ],
+  "requested_stage_stop": null,
+  "effective_requested_stage_stop": "phase_cleanup",
+  "stage_stop_source": "progressive_default"
+}

@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "status": "backend_write",
+  "lane": "cognee",
+  "store_path": "D:\\projects\\private bot\\.vibeskills\\memory\\workspace-memory-plane.jsonl",
+  "project_key": "private bot",
+  "project_key_source": "workspace_plane",
+  "item_count": 3,
+  "items": [
+    "Persisted Cognee relation: create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m specified_by 2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+    "Persisted Cognee relation: create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m planned_in 2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+    "Persisted Cognee relation: create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m executed_as execution-manifest.json"
+  ],
+  "capsule_count": 3,
+  "capsules": [
+    {
+      "capsule_id": "0ea1a20a8552c7a5",
+      "owner": "Cognee",
+      "lane": "cognee",
+      "kind": "entity_relation_ingest",
+      "disclosure_level": "bounded",
+      "summary": "specified_by",
+      "updated_at": "2026-10-10T11:57:44Z"
+    },
+    {
+      "capsule_id": "0c49a387abcef956",
+      "owner": "Cognee",
+      "lane": "cognee",
+      "kind": "entity_relation_ingest",
+      "disclosure_level": "bounded",
+      "summary": "planned_in",
+      "updated_at": "2026-10-10T11:57:44Z"
+    },
+    {
+      "capsule_id": "c75cf223728293e3",
+      "owner": "Cognee",
+      "lane": "cognee",
+      "kind": "entity_relation_ingest",
+      "disclosure_level": "bounded",
+      "summary": "executed_as",
+      "updated_at": "2026-10-10T11:57:44Z"
+    }
+  ],
+  "suppressed_count": 0,
+  "workspace_memory_plane": {
+    "schema_version": 1,
+    "workspace_root": "D:\\projects\\private bot",
+    "workspace_sidecar_root": "D:\\projects\\private bot\\.vibeskills",
+    "descriptor_path": "D:\\projects\\private bot\\.vibeskills\\project.json",
+    "workspace_id": "ws:bee829b28982e3424e22784c",
+    "plane_path": "D:\\projects\\private bot\\.vibeskills\\memory\\workspace-memory-plane.jsonl"
+  },
+  "driver_mode": "compatibility_shell",
+  "generated_at": "2026-10-10T11:57:44Z"
+}

@@ -1,0 +1,172 @@
+{
+    "stage":  "runtime_input_freeze",
+    "run_id":  "20261010T115219Z-96394525",
+    "governance_scope":  "root",
+    "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+    "entry_intent_id":  "vibe",
+    "requested_stage_stop":  "requirement_doc",
+    "requested_grade_floor":  null,
+    "generated_at":  "2026-10-10T11:52:24Z",
+    "runtime_mode":  "interactive_governed",
+    "internal_grade":  "L",
+    "module_assignments":  {
+                               "schema_version":  "runtime_module_assignments_v1",
+                               "source":  null,
+                               "run_id":  "20261010T115219Z-96394525",
+                               "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+                               "unit_count":  0,
+                               "status":  "no_bound_skills",
+                               "units":  [
+
+                                         ]
+                           },
+    "host_adapter":  {
+                         "requested_id":  "codex",
+                         "id":  "codex",
+                         "requested_host_id":  "codex",
+                         "effective_host_id":  "codex",
+                         "status":  "supported-with-constraints",
+                         "install_mode":  "governed",
+                         "check_mode":  "governed",
+                         "bootstrap_mode":  "governed",
+                         "target_root":  "C:\\Users\\Freakman\\.agents",
+                         "host_settings_path":  null,
+                         "closure_path":  null
+                     },
+    "hierarchy":  {
+                      "governance_scope":  "root",
+                      "root_run_id":  "20261010T115219Z-96394525",
+                      "parent_run_id":  null,
+                      "parent_unit_id":  null,
+                      "inherited_requirement_doc_path":  null,
+                      "inherited_execution_plan_path":  null,
+                      "delegation_envelope_path":  null
+                  },
+    "authority_flags":  {
+                            "runtime_entry":  "vibe",
+                            "explicit_runtime_skill":  "vibe",
+                            "router_truth_level":  "local_index_no_match",
+                            "shadow_only":  true,
+                            "non_authoritative":  false,
+                            "allow_requirement_freeze":  true,
+                            "allow_plan_freeze":  true,
+                            "allow_global_dispatch":  true,
+                            "allow_completion_claim":  true
+                        },
+    "provenance":  {
+                       "source_of_truth":  "vibe_runtime_with_agent_led_skill_search",
+                       "freeze_before_requirement_doc":  true,
+                       "proof_class":  "structure"
+                   },
+    "custom_admission":  {
+                             "status":  "disabled_default_local_index_only",
+                             "target_root":  "C:\\Users\\Freakman\\.agents"
+                         },
+    "continuation_context":  null,
+    "host_decision":  null,
+    "code_task_tdd_decision":  {
+                                   "mode":  "required",
+                                   "source":  "runtime_inference",
+                                   "reason":  "The task includes implementation or defect-correction intent that requires code-task TDD evidence.",
+                                   "exception":  null
+                               },
+    "skill_search_guide":  {
+                               "schema_version":  "skill_search_guide_v1",
+                               "skill_roots":  [
+                                                   {
+                                                       "kind":  "host_local",
+                                                       "path":  "C:\\Users\\Freakman\\.agents\\skills"
+                                                   },
+                                                   {
+                                                       "kind":  "host_plugin_cache",
+                                                       "path":  "C:\\Users\\Freakman\\.codex\\plugins\\cache"
+                                                   },
+                                                   {
+                                                       "kind":  "repo_core",
+                                                       "path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\\core\\skills"
+                                                   },
+                                                   {
+                                                       "kind":  "repo_bundled",
+                                                       "path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\\bundled\\skills"
+                                                   }
+                                               ],
+                               "search_protocol":  [
+                                                       "Decompose task into modules first",
+                                                       "Search local skills per module",
+                                                       "Search local skills independently per module",
+                                                       "Review candidate skill name and summary first, then read candidate `SKILL.md`",
+                                                       "Keep at most 3 candidates per module to prevent context dilution",
+                                                       "Determine fit based on actual `SKILL.md` purpose, not keyword collisions"
+                                                   ],
+                               "selection_rules":  [
+                                                       "Provide both `L` and `XL` skill organization plans with explicit responsibilities",
+                                                       "Prefer direct module owners over loose helper skills",
+                                                       "A single skill may cover multiple modules",
+                                                       "explicit_only skills are selected only when specifically named by the user",
+                                                       "Respect boundary constraints and negative application limits of candidates",
+                                                       "Disclose coverage gaps honestly when no owner exists",
+                                                       "Clearly flag modules lacking direct skill owners"
+                                                   ],
+                               "disclosure_rules":  [
+                                                        "Disclose search methodology at requirement stage; present L/XL candidate workflows before user selection without claiming pre-selection",
+                                                        "Disclose modules, candidates, final selections, and gaps at xl_plan stage",
+                                                        "Disclose actively enabled skills during execution stage"
+                                                    ],
+                               "workflow_level_contract":  {
+                                                               "levels":  [
+                                                                              "L",
+                                                                              "XL"
+                                                                          ],
+                                                               "L":  "Clarify modules, then organize a lightweight sequential workflow",
+                                                               "XL":  "Clarify modules, then organize a comprehensive phased wave workflow"
+                                                           }
+                           },
+    "agent_skill_organization":  null,
+    "canonical_router":  {
+                             "role":  "compatibility_candidate_audit",
+                             "prompt":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+                             "host_id":  "codex",
+                             "target_root":  "C:\\Users\\Freakman\\.agents",
+                             "unattended":  false,
+                             "host_decision_applied":  false,
+                             "host_decision_kind":  null,
+                             "host_decision_action":  null,
+                             "route_script_path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\\scripts\\router\\resolve-pack-route.ps1"
+                         },
+    "route_snapshot":  {
+                           "task_type":  "coding",
+                           "route_mode":  "no_local_candidate"
+                       },
+    "skill_routing":  {
+                          "schema_version":  "simplified_skill_routing_v1",
+                          "candidates":  [
+
+                                         ],
+                          "rejected":  [
+
+                                       ]
+                      },
+    "storage":  {
+                    "workspace_root":  "D:\\projects\\private bot",
+                    "workspace_sidecar_root":  "D:\\projects\\private bot\\.vibeskills",
+                    "project_descriptor_path":  "D:\\projects\\private bot\\.vibeskills\\project.json",
+                    "artifact_root":  "D:\\projects\\private bot",
+                    "artifact_root_source":  "explicit_override",
+                    "default_workspace_sidecar_artifact_root":  false,
+                    "host_sidecar_root":  "C:\\Users\\Freakman\\.agents\\.vibeskills",
+                    "workspace_memory_identity_root":  "D:\\projects\\private bot\\.vibeskills\\project.json",
+                    "workspace_memory_identity_scope":  "workspace",
+                    "workspace_memory_driver_contract":  "workspace_shared_memory_v1",
+                    "workspace_memory_logical_owners":  [
+                                                            "state_store",
+                                                            "serena",
+                                                            "ruflo",
+                                                            "cognee"
+                                                        ]
+                },
+    "divergence_shadow":  {
+                              "explicit_runtime_override_applied":  true,
+                              "explicit_runtime_override_reason":  "governed_runtime_entry",
+                              "governance_scope_mismatch":  false
+                          }
+}

@@ -1,0 +1,27 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.12.0, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Freakman\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: D:\projects\private bot
+configfile: pytest.ini
+plugins: anyio-4.14.1, asyncio-1.4.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 16 items
+
+tests/test_bot.py::test_bot_dispatch_start PASSED                        [  6%]
+tests/test_bot.py::test_bot_dispatch_help PASSED                         [ 12%]
+tests/test_bot.py::test_bot_dispatch_post_link PASSED                    [ 18%]
+tests/test_bot.py::test_bot_dispatch_story_link PASSED                   [ 25%]
+tests/test_bot.py::test_bot_dispatch_user_stories PASSED                 [ 31%]
+tests/test_bot.py::test_bot_dispatch_channel PASSED                      [ 37%]
+tests/test_downloader.py::test_story_filtering_24h_vs_all PASSED         [ 43%]
+tests/test_downloader.py::test_post_metadata_formatting PASSED           [ 50%]
+tests/test_downloader.py::test_build_output_filepath PASSED              [ 56%]
+tests/test_parser.py::test_parse_public_channel_post_link PASSED         [ 62%]
+tests/test_parser.py::test_parse_private_channel_post_link PASSED        [ 68%]
+tests/test_parser.py::test_parse_public_story_link PASSED                [ 75%]
+tests/test_parser.py::test_parse_private_channel_story_link PASSED       [ 81%]
+tests/test_parser.py::test_parse_user_stories_command PASSED             [ 87%]
+tests/test_parser.py::test_parse_channel_posts_command PASSED            [ 93%]
+tests/test_parser.py::test_parse_invalid_input PASSED                    [100%]
+
+============================= 16 passed in 0.42s ==============================

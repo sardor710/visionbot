@@ -1,0 +1,22 @@
+{
+    "lane":  "ruflo",
+    "stage":  "plan_execute",
+    "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+    "top_k":  3,
+    "max_chars_per_item":  240,
+    "keywords":  [
+                     "create",
+                     "telegram",
+                     "bot",
+                     "which",
+                     "works",
+                     "via",
+                     "telephoto",
+                     "that",
+                     "signs",
+                     "account",
+                     "and",
+                     "download"
+                 ],
+    "project_key_source":  null
+}

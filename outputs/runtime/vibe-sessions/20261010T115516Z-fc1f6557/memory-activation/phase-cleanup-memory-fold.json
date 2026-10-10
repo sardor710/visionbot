@@ -1,0 +1,20 @@
+{
+    "stage":  "phase_cleanup",
+    "fold_kind":  "deepagent_memory_fold_local",
+    "generated_at":  "2026-10-10T11:57:44Z",
+    "working_memory":  [
+                           "Requirement doc: D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+                           "Execution plan: D:\\projects\\private bot\\docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+                           "Runtime status: completed"
+                       ],
+    "tool_memory":  [
+                        "Execution manifest: D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json",
+                        "Cleanup receipt: D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json"
+                    ],
+    "evidence_anchors":  [
+                             "D:\\projects\\private bot\\docs\\requirements\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m.md",
+                             "D:\\projects\\private bot\\docs\\plans\\2026-10-10-create-telegram-bot-which-works-via-telephoto-that-signs-in-to-m-execution-plan.md",
+                             "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\execution-manifest.json",
+                             "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\cleanup-receipt.json"
+                         ]
+}

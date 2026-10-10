@@ -1,0 +1,42 @@
+Governed runtime host briefing:
+
+Currently stopped at Requirement Confirmation stage.
+- Please confirm if the requirements are accurate; specify directly if modifications are needed. Execution planning begins after approval.
+- 用户确认需求后、重新进入 canonical Vibe 之前，Agent 必须先按 `bounded_return_control.host_decision_contract.agent_skill_organization_contract` 构造 `host_decision.agent_skill_organization`；不要通过失败重试或读取运行时源码猜字段。
+- 组织 skills 时，不得选择需要安装、推荐或调用 `forbidden_mcp_contract.forbidden_mcp_ids` 中任一 MCP server 的 Skill。
+- Use the directory name that directly contains the retained `SKILL.md` as `skill_id` in `candidate_skill_ids` and `selected_skills[].skill_id`.
+- Do not submit a displayed Skill name or frontmatter `name` as `skill_id`; a nested retained `SKILL.md` uses its own containing directory name.
+- Explain how the Agent will find and organize skills, then explain L / XL workflow level differences:
+  - Decompose task into modules first
+  - Search local skills per module
+  - Search local skills independently per module
+  - Review candidate skill name and summary first, then read candidate `SKILL.md`
+  - Keep at most 3 candidates per module to prevent context dilution
+  - Determine fit based on actual `SKILL.md` purpose, not keyword collisions
+  - Provide both `L` and `XL` skill organization plans with explicit responsibilities
+  - Prefer direct module owners over loose helper skills
+  - A single skill may cover multiple modules
+  - explicit_only skills are selected only when specifically named by the user
+  - Respect boundary constraints and negative application limits of candidates
+  - Disclose coverage gaps honestly when no owner exists
+  - Clearly flag modules lacking direct skill owners
+  - Disclose search methodology at requirement stage; present L/XL candidate workflows before user selection without claiming pre-selection
+  - Disclose modules, candidates, final selections, and gaps at xl_plan stage
+  - Disclose actively enabled skills during execution stage
+  - User-visible: True
+  - Recommended level: L
+  - Recommendation reason: 当前任务更像单主线交付：先冻结需求和计划，再让 Agent 按模块组织一个较轻量的 skills 方案，通常比一开始就上分波次协作更省沟通成本。
+  - Why this decision matters: L 和 XL 会直接改变后续的协作深度、是否进入分波次执行，以及证据和回归边界的强度。
+  - Before asking the user to choose L or XL, explain each task-specific workflow and list its task-specific candidate skill names. Label those names as candidates that are not yet selected or used.
+  - L: Level L is ideal for multi-step sequential tasks: freezes requirements/plans with full evidence verification under a unified main process.
+  - L workflow: Freeze requirements and plan, then execute sequentially through a single main process.
+  - L skills: 会先按模块搜索本地 skills、阅读候选 `SKILL.md`，再给出较轻量的 L 级组织方案；涉及代码改动或缺陷修复时，会补充 `tdd` 这类 failure-first 验证 skill，但不默认拆成多代理。
+  - L rationale: 适合仍然是一个主交付物、依赖链较短、并行收益不高的任务，可以把沟通成本压低，同时保留完整的冻结与验证边界。
+  - L confirm reply: 如果你认可这个较轻量但证据完整的流程，请回复：`走 L 级`。
+  - XL: XL 级适合研究交付、多产物、多技能协作或风险更高的任务：会有更严格的需求冻结、计划冻结、分阶段执行、证据清单和收尾检查。
+  - XL workflow: 先冻结需求和计划，再把 Agent 组织出的方案拆成分波次执行；只有在依赖安全时才允许小步并行，最后统一回到验证和收尾。
+  - XL skills: 会先按模块组织更完整的本地 Skills；确需多代理时，由当前 Agent 依据已冻结计划分波次协调，不额外假定一个协调 Skill。
+  - XL rationale: 适合多产物、多技能协作、研究交付或高风险改动，因为它能先讲清分工、阶段边界和证据清单，再进入执行。
+  - XL confirm reply: 如果你希望先把分工和波次讲清楚，再进入更重的执行流程，请回复：`走 XL 级`。
+  - Question: Confirm workflow level: Proceed with Level L (sequential) or Level XL (multi-agent waves)?
+  - Selection prompt: Please review the options above and confirm your preferred workflow level.

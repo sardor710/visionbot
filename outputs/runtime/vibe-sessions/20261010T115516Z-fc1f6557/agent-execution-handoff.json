@@ -1,0 +1,468 @@
+{
+    "schema_version":  "agent_execution_handoff_v1",
+    "source_run_id":  "20261010T115516Z-fc1f6557",
+    "status":  "agent_action_required",
+    "control_owner":  "agent",
+    "workflow_level":  "XL",
+    "module_execution_path":  "D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json",
+    "result_contract":  {
+                            "schema_version":  "module_execution_v1",
+                            "source_run_id":  "20261010T115516Z-fc1f6557",
+                            "module_work_plan_digest":  "925cafc2cd490c0493b727bbfcc44d83918a5ea9d84efa4711bfcaf3eb2a7cce",
+                            "required_top_level_fields":  [
+                                                              "schema_version",
+                                                              "source_run_id",
+                                                              "module_work_plan_digest",
+                                                              "units",
+                                                              "modules",
+                                                              "tdd_evidence"
+                                                          ],
+                            "terminal_states":  [
+                                                    "completed",
+                                                    "failed",
+                                                    "blocked"
+                                                ],
+                            "criterion_terminal_states":  [
+                                                              "passing",
+                                                              "failing",
+                                                              "blocked"
+                                                          ],
+                            "criterion_result_required_fields":  [
+                                                                     "criterion_id",
+                                                                     "state"
+                                                                 ],
+                            "units":  [
+                                          {
+                                              "unit_id":  "module_telegram_core--python-pro--owner",
+                                              "module_id":  "module_telegram_core",
+                                              "skill_id":  "python-pro",
+                                              "role":  "owner",
+                                              "required_result_fields":  [
+                                                                             "unit_id",
+                                                                             "module_id",
+                                                                             "skill_id",
+                                                                             "role",
+                                                                             "state",
+                                                                             "result_summary",
+                                                                             "evidence_paths",
+                                                                             "verification_results"
+                                                                         ]
+                                          },
+                                          {
+                                              "unit_id":  "module_downloader_engine--python-pro--owner",
+                                              "module_id":  "module_downloader_engine",
+                                              "skill_id":  "python-pro",
+                                              "role":  "owner",
+                                              "required_result_fields":  [
+                                                                             "unit_id",
+                                                                             "module_id",
+                                                                             "skill_id",
+                                                                             "role",
+                                                                             "state",
+                                                                             "result_summary",
+                                                                             "evidence_paths",
+                                                                             "verification_results"
+                                                                         ]
+                                          },
+                                          {
+                                              "unit_id":  "module_bot_interface--python-pro--owner",
+                                              "module_id":  "module_bot_interface",
+                                              "skill_id":  "python-pro",
+                                              "role":  "owner",
+                                              "required_result_fields":  [
+                                                                             "unit_id",
+                                                                             "module_id",
+                                                                             "skill_id",
+                                                                             "role",
+                                                                             "state",
+                                                                             "result_summary",
+                                                                             "evidence_paths",
+                                                                             "verification_results"
+                                                                         ]
+                                          },
+                                          {
+                                              "unit_id":  "module_test_verification--test-driven-development--owner",
+                                              "module_id":  "module_test_verification",
+                                              "skill_id":  "test-driven-development",
+                                              "role":  "owner",
+                                              "required_result_fields":  [
+                                                                             "unit_id",
+                                                                             "module_id",
+                                                                             "skill_id",
+                                                                             "role",
+                                                                             "state",
+                                                                             "result_summary",
+                                                                             "evidence_paths",
+                                                                             "verification_results"
+                                                                         ]
+                                          }
+                                      ],
+                            "modules":  [
+                                            {
+                                                "module_id":  "module_telegram_core",
+                                                "required":  true,
+                                                "execution_mode":  "skill_assigned",
+                                                "gap_reason":  null,
+                                                "acceptance_criteria":  [
+                                                                            {
+                                                                                "criterion_id":  "core-auth-and-parsing",
+                                                                                "description":  "Telethon client config loads credentials and entity/link parser accurately extracts post, story, channel, and user identifiers.",
+                                                                                "verification_mode":  "automated"
+                                                                            }
+                                                                        ],
+                                                "required_result_fields":  [
+                                                                               "module_id",
+                                                                               "required",
+                                                                               "execution_mode",
+                                                                               "gap_reason",
+                                                                               "state",
+                                                                               "criterion_results"
+                                                                           ]
+                                            },
+                                            {
+                                                "module_id":  "module_downloader_engine",
+                                                "required":  true,
+                                                "execution_mode":  "skill_assigned",
+                                                "gap_reason":  null,
+                                                "acceptance_criteria":  [
+                                                                            {
+                                                                                "criterion_id":  "downloader-engine-features",
+                                                                                "description":  "Engine successfully fetches posts, photos, videos, stories with 24h filter and captures caption/date metadata.",
+                                                                                "verification_mode":  "automated"
+                                                                            }
+                                                                        ],
+                                                "required_result_fields":  [
+                                                                               "module_id",
+                                                                               "required",
+                                                                               "execution_mode",
+                                                                               "gap_reason",
+                                                                               "state",
+                                                                               "criterion_results"
+                                                                           ]
+                                            },
+                                            {
+                                                "module_id":  "module_bot_interface",
+                                                "required":  true,
+                                                "execution_mode":  "skill_assigned",
+                                                "gap_reason":  null,
+                                                "acceptance_criteria":  [
+                                                                            {
+                                                                                "criterion_id":  "bot-command-handling",
+                                                                                "description":  "Bot commands and incoming messages dispatch to the download engine and return download progress to user.",
+                                                                                "verification_mode":  "automated"
+                                                                            }
+                                                                        ],
+                                                "required_result_fields":  [
+                                                                               "module_id",
+                                                                               "required",
+                                                                               "execution_mode",
+                                                                               "gap_reason",
+                                                                               "state",
+                                                                               "criterion_results"
+                                                                           ]
+                                            },
+                                            {
+                                                "module_id":  "module_test_verification",
+                                                "required":  true,
+                                                "execution_mode":  "skill_assigned",
+                                                "gap_reason":  null,
+                                                "acceptance_criteria":  [
+                                                                            {
+                                                                                "criterion_id":  "full-test-verification",
+                                                                                "description":  "All unit tests pass verifying parsing, story time filtering, metadata extraction, and bot commands.",
+                                                                                "verification_mode":  "automated"
+                                                                            }
+                                                                        ],
+                                                "required_result_fields":  [
+                                                                               "module_id",
+                                                                               "required",
+                                                                               "execution_mode",
+                                                                               "gap_reason",
+                                                                               "state",
+                                                                               "criterion_results"
+                                                                           ]
+                                            }
+                                        ],
+                            "submission_template":  {
+                                                        "schema_version":  "module_execution_v1",
+                                                        "source_run_id":  "20261010T115516Z-fc1f6557",
+                                                        "module_work_plan_digest":  "925cafc2cd490c0493b727bbfcc44d83918a5ea9d84efa4711bfcaf3eb2a7cce",
+                                                        "units":  [
+                                                                      {
+                                                                          "unit_id":  "module_telegram_core--python-pro--owner",
+                                                                          "module_id":  "module_telegram_core",
+                                                                          "skill_id":  "python-pro",
+                                                                          "role":  "owner",
+                                                                          "state":  null,
+                                                                          "result_summary":  "",
+                                                                          "evidence_paths":  [
+
+                                                                                             ],
+                                                                          "verification_results":  [
+
+                                                                                                   ]
+                                                                      },
+                                                                      {
+                                                                          "unit_id":  "module_downloader_engine--python-pro--owner",
+                                                                          "module_id":  "module_downloader_engine",
+                                                                          "skill_id":  "python-pro",
+                                                                          "role":  "owner",
+                                                                          "state":  null,
+                                                                          "result_summary":  "",
+                                                                          "evidence_paths":  [
+
+                                                                                             ],
+                                                                          "verification_results":  [
+
+                                                                                                   ]
+                                                                      },
+                                                                      {
+                                                                          "unit_id":  "module_bot_interface--python-pro--owner",
+                                                                          "module_id":  "module_bot_interface",
+                                                                          "skill_id":  "python-pro",
+                                                                          "role":  "owner",
+                                                                          "state":  null,
+                                                                          "result_summary":  "",
+                                                                          "evidence_paths":  [
+
+                                                                                             ],
+                                                                          "verification_results":  [
+
+                                                                                                   ]
+                                                                      },
+                                                                      {
+                                                                          "unit_id":  "module_test_verification--test-driven-development--owner",
+                                                                          "module_id":  "module_test_verification",
+                                                                          "skill_id":  "test-driven-development",
+                                                                          "role":  "owner",
+                                                                          "state":  null,
+                                                                          "result_summary":  "",
+                                                                          "evidence_paths":  [
+
+                                                                                             ],
+                                                                          "verification_results":  [
+
+                                                                                                   ]
+                                                                      }
+                                                                  ],
+                                                        "modules":  [
+                                                                        {
+                                                                            "module_id":  "module_telegram_core",
+                                                                            "required":  true,
+                                                                            "execution_mode":  "skill_assigned",
+                                                                            "gap_reason":  null,
+                                                                            "state":  null,
+                                                                            "criterion_results":  [
+                                                                                                      {
+                                                                                                          "criterion_id":  "core-auth-and-parsing",
+                                                                                                          "state":  null,
+                                                                                                          "details":  ""
+                                                                                                      }
+                                                                                                  ]
+                                                                        },
+                                                                        {
+                                                                            "module_id":  "module_downloader_engine",
+                                                                            "required":  true,
+                                                                            "execution_mode":  "skill_assigned",
+                                                                            "gap_reason":  null,
+                                                                            "state":  null,
+                                                                            "criterion_results":  [
+                                                                                                      {
+                                                                                                          "criterion_id":  "downloader-engine-features",
+                                                                                                          "state":  null,
+                                                                                                          "details":  ""
+                                                                                                      }
+                                                                                                  ]
+                                                                        },
+                                                                        {
+                                                                            "module_id":  "module_bot_interface",
+                                                                            "required":  true,
+                                                                            "execution_mode":  "skill_assigned",
+                                                                            "gap_reason":  null,
+                                                                            "state":  null,
+                                                                            "criterion_results":  [
+                                                                                                      {
+                                                                                                          "criterion_id":  "bot-command-handling",
+                                                                                                          "state":  null,
+                                                                                                          "details":  ""
+                                                                                                      }
+                                                                                                  ]
+                                                                        },
+                                                                        {
+                                                                            "module_id":  "module_test_verification",
+                                                                            "required":  true,
+                                                                            "execution_mode":  "skill_assigned",
+                                                                            "gap_reason":  null,
+                                                                            "state":  null,
+                                                                            "criterion_results":  [
+                                                                                                      {
+                                                                                                          "criterion_id":  "full-test-verification",
+                                                                                                          "state":  null,
+                                                                                                          "details":  ""
+                                                                                                      }
+                                                                                                  ]
+                                                                        }
+                                                                    ],
+                                                        "tdd_evidence":  {
+                                                                             "state":  null,
+                                                                             "evidence_paths":  [
+
+                                                                                                ],
+                                                                             "red_phase_evidence_paths":  [
+
+                                                                                                          ],
+                                                                             "green_phase_evidence_paths":  [
+
+                                                                                                            ],
+                                                                             "refactor_phase_evidence_paths":  [
+
+                                                                                                               ],
+                                                                             "covered_code_task_tdd_evidence_requirements":  [
+
+                                                                                                                             ],
+                                                                             "covered_code_task_tdd_exceptions":  [
+
+                                                                                                                  ],
+                                                                             "notes":  ""
+                                                                         }
+                                                    },
+                            "tdd_evidence":  {
+                                                 "terminal_states":  [
+                                                                         "passing",
+                                                                         "failing",
+                                                                         "blocked"
+                                                                     ],
+                                                 "required_result_fields":  [
+                                                                                "state",
+                                                                                "evidence_paths",
+                                                                                "red_phase_evidence_paths",
+                                                                                "green_phase_evidence_paths",
+                                                                                "refactor_phase_evidence_paths",
+                                                                                "covered_code_task_tdd_evidence_requirements",
+                                                                                "covered_code_task_tdd_exceptions",
+                                                                                "notes"
+                                                                            ],
+                                                 "required_code_task_tdd_evidence_requirements":  [
+                                                                                                      "Record failing-first evidence for the changed behavior before implementation or defect correction.",
+                                                                                                      "Record the green rerun that proves the targeted behavior passed after implementation.",
+                                                                                                      "Map the changed behavior to targeted verification evidence; generic suite success alone is insufficient.",
+                                                                                                      "If automated failing-first evidence is not appropriate, freeze and honor an explicit code-task TDD exception instead of silently skipping the requirement.",
+                                                                                                      "Do not create separate M/L/XL entry commands.",
+                                                                                                      "Do not introduce a second router or control plane."
+                                                                                                  ],
+                                                 "required_code_task_tdd_exceptions":  [
+
+                                                                                       ]
+                                             }
+                        },
+    "return_command":  "py -3 -m vgo_cli.main canonical-entry --repo-root \"C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\" --workspace-root \"D:\\projects\\private bot\" --artifact-root \"D:\\projects\\private bot\" --prompt \"Continue after Agent module execution\" --continue-from-run-id \"20261010T115516Z-fc1f6557\" --module-execution-json-file \"D:\\projects\\private bot\\outputs\\runtime\\vibe-sessions\\20261010T115516Z-fc1f6557\\module-execution.json\"",
+    "waves":  [
+                  {
+                      "wave_id":  "module-stage-1-module_telegram_core--python-pro--owner",
+                      "execution_mode":  "sequential",
+                      "unit_ids":  [
+                                       "module_telegram_core--python-pro--owner"
+                                   ]
+                  },
+                  {
+                      "wave_id":  "module-stage-2-module_downloader_engine--python-pro--owner",
+                      "execution_mode":  "sequential",
+                      "unit_ids":  [
+                                       "module_downloader_engine--python-pro--owner"
+                                   ]
+                  },
+                  {
+                      "wave_id":  "module-stage-3-module_bot_interface--python-pro--owner",
+                      "execution_mode":  "sequential",
+                      "unit_ids":  [
+                                       "module_bot_interface--python-pro--owner"
+                                   ]
+                  },
+                  {
+                      "wave_id":  "module-stage-4-module_test_verification--test-driven-development--owner",
+                      "execution_mode":  "sequential",
+                      "unit_ids":  [
+                                       "module_test_verification--test-driven-development--owner"
+                                   ]
+                  }
+              ],
+    "units":  [
+                  {
+                      "unit_id":  "module_telegram_core--python-pro--owner",
+                      "module_id":  "module_telegram_core",
+                      "skill_id":  "python-pro",
+                      "role":  "owner",
+                      "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                      "responsibility":  "Implement Telethon client session, authentication, and URL/entity parser.",
+                      "expected_outputs":  [
+                                               "src/telebot_downloader/core/client.py",
+                                               "src/telebot_downloader/core/parser.py"
+                                           ],
+                      "verification":  [
+                                           "py -3 -m pytest tests/test_parser.py"
+                                       ],
+                      "depends_on_unit_ids":  [
+
+                                              ],
+                      "write_scope":  "src/telebot_downloader/core/**"
+                  },
+                  {
+                      "unit_id":  "module_downloader_engine--python-pro--owner",
+                      "module_id":  "module_downloader_engine",
+                      "skill_id":  "python-pro",
+                      "role":  "owner",
+                      "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                      "responsibility":  "Implement media downloading, metadata extraction (captions, date), and story filtering (24h/all).",
+                      "expected_outputs":  [
+                                               "src/telebot_downloader/downloader/engine.py",
+                                               "src/telebot_downloader/downloader/stories.py"
+                                           ],
+                      "verification":  [
+                                           "py -3 -m pytest tests/test_downloader.py"
+                                       ],
+                      "depends_on_unit_ids":  [
+                                                  "module_telegram_core--python-pro--owner"
+                                              ],
+                      "write_scope":  "src/telebot_downloader/downloader/**"
+                  },
+                  {
+                      "unit_id":  "module_bot_interface--python-pro--owner",
+                      "module_id":  "module_bot_interface",
+                      "skill_id":  "python-pro",
+                      "role":  "owner",
+                      "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                      "responsibility":  "Implement Telegram bot interaction handlers and main application entrypoint.",
+                      "expected_outputs":  [
+                                               "src/telebot_downloader/bot/handlers.py",
+                                               "src/telebot_downloader/main.py"
+                                           ],
+                      "verification":  [
+                                           "py -3 -m pytest tests/test_bot.py"
+                                       ],
+                      "depends_on_unit_ids":  [
+                                                  "module_downloader_engine--python-pro--owner"
+                                              ],
+                      "write_scope":  "src/telebot_downloader/bot/**"
+                  },
+                  {
+                      "unit_id":  "module_test_verification--test-driven-development--owner",
+                      "module_id":  "module_test_verification",
+                      "skill_id":  "test-driven-development",
+                      "role":  "owner",
+                      "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md",
+                      "responsibility":  "Design and execute TDD test harness covering parser, story 24h filtering, and download orchestrator.",
+                      "expected_outputs":  [
+                                               "tests/test_parser.py",
+                                               "tests/test_downloader.py",
+                                               "tests/test_bot.py"
+                                           ],
+                      "verification":  [
+                                           "py -3 -m pytest tests/"
+                                       ],
+                      "depends_on_unit_ids":  [
+                                                  "module_bot_interface--python-pro--owner"
+                                              ],
+                      "write_scope":  "tests/**"
+                  }
+              ]
+}

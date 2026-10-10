@@ -1,0 +1,542 @@
+{
+    "stage":  "runtime_input_freeze",
+    "run_id":  "20261010T115516Z-fc1f6557",
+    "governance_scope":  "root",
+    "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+    "entry_intent_id":  "vibe",
+    "requested_stage_stop":  "phase_cleanup",
+    "requested_grade_floor":  null,
+    "generated_at":  "2026-10-10T11:55:21Z",
+    "runtime_mode":  "interactive_governed",
+    "internal_grade":  "XL",
+    "module_assignments":  {
+                               "schema_version":  "runtime_module_assignments_v1",
+                               "source":  "agent_skill_organization",
+                               "run_id":  "20261010T115516Z-fc1f6557",
+                               "task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+                               "unit_count":  2,
+                               "status":  "projected_from_agent_skill_organization",
+                               "units":  [
+                                             {
+                                                 "work_unit_id":  "runtime-bound-skill-1",
+                                                 "bound_skill":  "python-pro",
+                                                 "phase_id":  null,
+                                                 "reason":  "Expert modern Python development covering async MTProto architecture, typing, and system integration.",
+                                                 "task_slice":  "Build robust Python Telegram bot with Telethon MTProto client, downloader engine, and command handlers.",
+                                                 "skill_md_path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                                                 "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                                                 "dispatch_phase":  "in_execution",
+                                                 "parallelizable_in_root_xl":  true,
+                                                 "skill_root":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro",
+                                                 "bounded_role":  "module_owner",
+                                                 "must_preserve_workflow":  true,
+                                                 "binding_profile":  "default",
+                                                 "lane_policy":  "inherit_grade",
+                                                 "write_scope":  "",
+                                                 "review_mode":  "module_acceptance",
+                                                 "execution_priority":  50,
+                                                 "required_inputs":  [
+                                                                         "approved module work contract",
+                                                                         "frozen requirement context",
+                                                                         "relevant source files or domain artifacts"
+                                                                     ],
+                                                 "expected_outputs":  [
+                                                                          "bounded module findings or code changes",
+                                                                          "verification notes aligned with the assigned Skill and module acceptance criteria"
+                                                                      ],
+                                                 "verification_expectation":  "Follow the assigned SKILL.md and satisfy the module acceptance criteria.",
+                                                 "progressive_load_policy":  [
+                                                                                 "Read the assigned C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md before starting the module."
+                                                                             ],
+                                                 "destructive":  false,
+                                                 "destructive_reason_codes":  [
+
+                                                                              ]
+                                             },
+                                             {
+                                                 "work_unit_id":  "runtime-bound-skill-2",
+                                                 "bound_skill":  "test-driven-development",
+                                                 "phase_id":  null,
+                                                 "reason":  "Enforce failing-first and regression-free testing discipline for all core behaviors.",
+                                                 "task_slice":  "Design and execute TDD test harness covering parser, story 24h filtering, and download orchestrator.",
+                                                 "skill_md_path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md",
+                                                 "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md",
+                                                 "dispatch_phase":  "in_execution",
+                                                 "parallelizable_in_root_xl":  true,
+                                                 "skill_root":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development",
+                                                 "bounded_role":  "module_owner",
+                                                 "must_preserve_workflow":  true,
+                                                 "binding_profile":  "default",
+                                                 "lane_policy":  "inherit_grade",
+                                                 "write_scope":  "tests/**",
+                                                 "review_mode":  "module_acceptance",
+                                                 "execution_priority":  50,
+                                                 "required_inputs":  [
+                                                                         "approved module work contract",
+                                                                         "frozen requirement context",
+                                                                         "relevant source files or domain artifacts"
+                                                                     ],
+                                                 "expected_outputs":  [
+                                                                          "bounded module findings or code changes",
+                                                                          "verification notes aligned with the assigned Skill and module acceptance criteria"
+                                                                      ],
+                                                 "verification_expectation":  "Follow the assigned SKILL.md and satisfy the module acceptance criteria.",
+                                                 "progressive_load_policy":  [
+                                                                                 "Read the assigned C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md before starting the module."
+                                                                             ],
+                                                 "destructive":  false,
+                                                 "destructive_reason_codes":  [
+
+                                                                              ]
+                                             }
+                                         ]
+                           },
+    "host_adapter":  {
+                         "requested_id":  "codex",
+                         "id":  "codex",
+                         "requested_host_id":  "codex",
+                         "effective_host_id":  "codex",
+                         "status":  "supported-with-constraints",
+                         "install_mode":  "governed",
+                         "check_mode":  "governed",
+                         "bootstrap_mode":  "governed",
+                         "target_root":  "C:\\Users\\Freakman\\.agents",
+                         "host_settings_path":  null,
+                         "closure_path":  null
+                     },
+    "hierarchy":  {
+                      "governance_scope":  "root",
+                      "root_run_id":  "20261010T115516Z-fc1f6557",
+                      "parent_run_id":  null,
+                      "parent_unit_id":  null,
+                      "inherited_requirement_doc_path":  null,
+                      "inherited_execution_plan_path":  null,
+                      "delegation_envelope_path":  null
+                  },
+    "authority_flags":  {
+                            "runtime_entry":  "vibe",
+                            "explicit_runtime_skill":  "vibe",
+                            "router_truth_level":  "local_index_no_match",
+                            "shadow_only":  true,
+                            "non_authoritative":  false,
+                            "allow_requirement_freeze":  true,
+                            "allow_plan_freeze":  true,
+                            "allow_global_dispatch":  true,
+                            "allow_completion_claim":  true
+                        },
+    "provenance":  {
+                       "source_of_truth":  "vibe_runtime_with_agent_led_skill_search",
+                       "freeze_before_requirement_doc":  true,
+                       "proof_class":  "structure"
+                   },
+    "custom_admission":  {
+                             "status":  "disabled_default_local_index_only",
+                             "target_root":  "C:\\Users\\Freakman\\.agents"
+                         },
+    "continuation_context":  {
+                                 "structured_bounded_reentry":  true,
+                                 "reentry_action":  "approve",
+                                 "source_run_id":  "20261010T115429Z-4f4947ac",
+                                 "terminal_stage":  "xl_plan",
+                                 "next_stage":  "phase_cleanup",
+                                 "revision_target_stage":  null,
+                                 "revision_delta":  [
+
+                                                    ],
+                                 "prior_task":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+                                 "prior_task_type":  "coding",
+                                 "prior_goal":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+                                 "prior_deliverable":  "The user-requested outcome described in the full goal, with supporting evidence appropriate to that outcome",
+                                 "prior_constraints":  [
+                                                           "Do not bypass the fixed six-stage governed runtime.",
+                                                           "Do not widen scope silently beyond the frozen requirement document."
+                                                       ],
+                                 "control_only_prompt":  false
+                             },
+    "host_decision":  null,
+    "code_task_tdd_decision":  {
+                                   "mode":  "required",
+                                   "source":  "host_decision",
+                                   "reason":  "The task includes implementation or defect-correction intent that requires code-task TDD evidence.",
+                                   "exception":  null
+                               },
+    "skill_search_guide":  {
+                               "schema_version":  "skill_search_guide_v1",
+                               "skill_roots":  [
+                                                   {
+                                                       "kind":  "host_local",
+                                                       "path":  "C:\\Users\\Freakman\\.agents\\skills"
+                                                   },
+                                                   {
+                                                       "kind":  "host_plugin_cache",
+                                                       "path":  "C:\\Users\\Freakman\\.codex\\plugins\\cache"
+                                                   },
+                                                   {
+                                                       "kind":  "repo_core",
+                                                       "path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\\core\\skills"
+                                                   },
+                                                   {
+                                                       "kind":  "repo_bundled",
+                                                       "path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\\bundled\\skills"
+                                                   }
+                                               ],
+                               "search_protocol":  [
+                                                       "Decompose task into modules first",
+                                                       "Search local skills per module",
+                                                       "Search local skills independently per module",
+                                                       "Review candidate skill name and summary first, then read candidate `SKILL.md`",
+                                                       "Keep at most 3 candidates per module to prevent context dilution",
+                                                       "Determine fit based on actual `SKILL.md` purpose, not keyword collisions"
+                                                   ],
+                               "selection_rules":  [
+                                                       "Provide both `L` and `XL` skill organization plans with explicit responsibilities",
+                                                       "Prefer direct module owners over loose helper skills",
+                                                       "A single skill may cover multiple modules",
+                                                       "explicit_only skills are selected only when specifically named by the user",
+                                                       "Respect boundary constraints and negative application limits of candidates",
+                                                       "Disclose coverage gaps honestly when no owner exists",
+                                                       "Clearly flag modules lacking direct skill owners"
+                                                   ],
+                               "disclosure_rules":  [
+                                                        "Disclose search methodology at requirement stage; present L/XL candidate workflows before user selection without claiming pre-selection",
+                                                        "Disclose modules, candidates, final selections, and gaps at xl_plan stage",
+                                                        "Disclose actively enabled skills during execution stage"
+                                                    ],
+                               "workflow_level_contract":  {
+                                                               "levels":  [
+                                                                              "L",
+                                                                              "XL"
+                                                                          ],
+                                                               "L":  "Clarify modules, then organize a lightweight sequential workflow",
+                                                               "XL":  "Clarify modules, then organize a comprehensive phased wave workflow"
+                                                           }
+                           },
+    "agent_skill_organization":  {
+                                     "schema_version":  "agent_skill_organization_v1",
+                                     "derived_by":  "agent",
+                                     "workflow_level":  "XL",
+                                     "modules":  [
+                                                     {
+                                                         "module_id":  "module_telegram_core",
+                                                         "goal":  "Implement Telethon client session configuration, MTProto authentication, and URL/entity parser for Telegram posts, stories, usernames, and channel IDs.",
+                                                         "candidate_skill_ids":  [
+                                                                                     "python-pro"
+                                                                                 ],
+                                                         "required":  true,
+                                                         "depends_on":  [
+
+                                                                        ],
+                                                         "execution_mode":  "skill_assigned",
+                                                         "write_scope":  "src/telebot_downloader/core/**",
+                                                         "expected_outputs":  [
+                                                                                  "src/telebot_downloader/core/client.py",
+                                                                                  "src/telebot_downloader/core/parser.py"
+                                                                              ],
+                                                         "verification":  [
+                                                                              "py -3 -m pytest tests/test_parser.py"
+                                                                          ],
+                                                         "acceptance_criteria":  [
+                                                                                     {
+                                                                                         "criterion_id":  "core-auth-and-parsing",
+                                                                                         "description":  "Telethon client config loads credentials and entity/link parser accurately extracts post, story, channel, and user identifiers.",
+                                                                                         "verification_mode":  "automated"
+                                                                                     }
+                                                                                 ]
+                                                     },
+                                                     {
+                                                         "module_id":  "module_downloader_engine",
+                                                         "goal":  "Implement downloading engine for channel posts, user stories (all vs last 24 hours), and media extraction with captions and timestamps.",
+                                                         "candidate_skill_ids":  [
+                                                                                     "python-pro"
+                                                                                 ],
+                                                         "required":  true,
+                                                         "depends_on":  [
+                                                                            "module_telegram_core"
+                                                                        ],
+                                                         "execution_mode":  "skill_assigned",
+                                                         "write_scope":  "src/telebot_downloader/downloader/**",
+                                                         "expected_outputs":  [
+                                                                                  "src/telebot_downloader/downloader/engine.py",
+                                                                                  "src/telebot_downloader/downloader/stories.py"
+                                                                              ],
+                                                         "verification":  [
+                                                                              "py -3 -m pytest tests/test_downloader.py"
+                                                                          ],
+                                                         "acceptance_criteria":  [
+                                                                                     {
+                                                                                         "criterion_id":  "downloader-engine-features",
+                                                                                         "description":  "Engine successfully fetches posts, photos, videos, stories with 24h filter and captures caption/date metadata.",
+                                                                                         "verification_mode":  "automated"
+                                                                                     }
+                                                                                 ]
+                                                     },
+                                                     {
+                                                         "module_id":  "module_bot_interface",
+                                                         "goal":  "Implement Telegram bot interaction handler allowing users to send links, channel IDs, and usernames via bot commands.",
+                                                         "candidate_skill_ids":  [
+                                                                                     "python-pro"
+                                                                                 ],
+                                                         "required":  true,
+                                                         "depends_on":  [
+                                                                            "module_downloader_engine"
+                                                                        ],
+                                                         "execution_mode":  "skill_assigned",
+                                                         "write_scope":  "src/telebot_downloader/bot/**",
+                                                         "expected_outputs":  [
+                                                                                  "src/telebot_downloader/bot/handlers.py",
+                                                                                  "src/telebot_downloader/main.py"
+                                                                              ],
+                                                         "verification":  [
+                                                                              "py -3 -m pytest tests/test_bot.py"
+                                                                          ],
+                                                         "acceptance_criteria":  [
+                                                                                     {
+                                                                                         "criterion_id":  "bot-command-handling",
+                                                                                         "description":  "Bot commands and incoming messages dispatch to the download engine and return download progress to user.",
+                                                                                         "verification_mode":  "automated"
+                                                                                     }
+                                                                                 ]
+                                                     },
+                                                     {
+                                                         "module_id":  "module_test_verification",
+                                                         "goal":  "Develop and run comprehensive unit and mock integration test suite following TDD methodology.",
+                                                         "candidate_skill_ids":  [
+                                                                                     "test-driven-development"
+                                                                                 ],
+                                                         "required":  true,
+                                                         "depends_on":  [
+                                                                            "module_bot_interface"
+                                                                        ],
+                                                         "execution_mode":  "skill_assigned",
+                                                         "write_scope":  "tests/**",
+                                                         "expected_outputs":  [
+                                                                                  "tests/test_parser.py",
+                                                                                  "tests/test_downloader.py",
+                                                                                  "tests/test_bot.py"
+                                                                              ],
+                                                         "verification":  [
+                                                                              "py -3 -m pytest tests/"
+                                                                          ],
+                                                         "acceptance_criteria":  [
+                                                                                     {
+                                                                                         "criterion_id":  "full-test-verification",
+                                                                                         "description":  "All unit tests pass verifying parsing, story time filtering, metadata extraction, and bot commands.",
+                                                                                         "verification_mode":  "automated"
+                                                                                     }
+                                                                                 ]
+                                                     }
+                                                 ],
+                                     "selected_skills":  [
+                                                             {
+                                                                 "skill_id":  "python-pro",
+                                                                 "module_ids":  [
+                                                                                    "module_telegram_core",
+                                                                                    "module_downloader_engine",
+                                                                                    "module_bot_interface"
+                                                                                ],
+                                                                 "role":  "owner",
+                                                                 "responsibility":  "Build robust Python Telegram bot with Telethon MTProto client, downloader engine, and command handlers.",
+                                                                 "reason":  "Expert modern Python development covering async MTProto architecture, typing, and system integration.",
+                                                                 "write_scope":  null,
+                                                                 "expected_outputs":  [
+                                                                                          "Build robust Python Telegram bot with Telethon MTProto client, downloader engine, and command handlers."
+                                                                                      ],
+                                                                 "verification":  [
+                                                                                      "Verify the module acceptance criteria."
+                                                                                  ],
+                                                                 "module_assignments":  [
+                                                                                            {
+                                                                                                "module_id":  "module_telegram_core",
+                                                                                                "role":  "owner",
+                                                                                                "responsibility":  "Implement Telethon client session, authentication, and URL/entity parser.",
+                                                                                                "write_scope":  "src/telebot_downloader/core/**",
+                                                                                                "expected_outputs":  [
+                                                                                                                         "src/telebot_downloader/core/client.py",
+                                                                                                                         "src/telebot_downloader/core/parser.py"
+                                                                                                                     ],
+                                                                                                "verification":  [
+                                                                                                                     "py -3 -m pytest tests/test_parser.py"
+                                                                                                                 ]
+                                                                                            },
+                                                                                            {
+                                                                                                "module_id":  "module_downloader_engine",
+                                                                                                "role":  "owner",
+                                                                                                "responsibility":  "Implement media downloading, metadata extraction (captions, date), and story filtering (24h/all).",
+                                                                                                "write_scope":  "src/telebot_downloader/downloader/**",
+                                                                                                "expected_outputs":  [
+                                                                                                                         "src/telebot_downloader/downloader/engine.py",
+                                                                                                                         "src/telebot_downloader/downloader/stories.py"
+                                                                                                                     ],
+                                                                                                "verification":  [
+                                                                                                                     "py -3 -m pytest tests/test_downloader.py"
+                                                                                                                 ]
+                                                                                            },
+                                                                                            {
+                                                                                                "module_id":  "module_bot_interface",
+                                                                                                "role":  "owner",
+                                                                                                "responsibility":  "Implement Telegram bot interaction handlers and main application entrypoint.",
+                                                                                                "write_scope":  "src/telebot_downloader/bot/**",
+                                                                                                "expected_outputs":  [
+                                                                                                                         "src/telebot_downloader/bot/handlers.py",
+                                                                                                                         "src/telebot_downloader/main.py"
+                                                                                                                     ],
+                                                                                                "verification":  [
+                                                                                                                     "py -3 -m pytest tests/test_bot.py"
+                                                                                                                 ]
+                                                                                            }
+                                                                                        ]
+                                                             },
+                                                             {
+                                                                 "skill_id":  "test-driven-development",
+                                                                 "module_ids":  [
+                                                                                    "module_test_verification"
+                                                                                ],
+                                                                 "role":  "owner",
+                                                                 "responsibility":  "Design and execute TDD test harness covering parser, story 24h filtering, and download orchestrator.",
+                                                                 "reason":  "Enforce failing-first and regression-free testing discipline for all core behaviors.",
+                                                                 "write_scope":  "tests/**",
+                                                                 "expected_outputs":  [
+                                                                                          "tests/test_parser.py",
+                                                                                          "tests/test_downloader.py",
+                                                                                          "tests/test_bot.py"
+                                                                                      ],
+                                                                 "verification":  [
+                                                                                      "py -3 -m pytest tests/"
+                                                                                  ],
+                                                                 "module_assignments":  [
+                                                                                            {
+                                                                                                "module_id":  "module_test_verification",
+                                                                                                "role":  "owner",
+                                                                                                "responsibility":  "Design and execute TDD test harness covering parser, story 24h filtering, and download orchestrator.",
+                                                                                                "write_scope":  "tests/**",
+                                                                                                "expected_outputs":  [
+                                                                                                                         "tests/test_parser.py",
+                                                                                                                         "tests/test_downloader.py",
+                                                                                                                         "tests/test_bot.py"
+                                                                                                                     ],
+                                                                                                "verification":  [
+                                                                                                                     "py -3 -m pytest tests/"
+                                                                                                                 ]
+                                                                                            }
+                                                                                        ]
+                                                             }
+                                                         ],
+                                     "uncovered_modules":  [
+
+                                                           ],
+                                     "workflow_level_contract":  {
+                                                                     "L":  "Clarify modules, then organize a lightweight sequential workflow.",
+                                                                     "XL":  "Clarify modules, then organize a comprehensive phased wave workflow with clear lane boundaries."
+                                                                 }
+                                 },
+    "canonical_router":  {
+                             "role":  "compatibility_candidate_audit",
+                             "prompt":  "create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel Update: create telegram bot which works via telephoto that signs in to my account and download posts videos and photos with captions and uploaded date from links. i can send link to story or post in telegram channel. and i can send username/id of user to download  all of its public stories or just last 24 hours ones. and telegram channel name or id to download all posts from telegram channel",
+                             "host_id":  "codex",
+                             "target_root":  "C:\\Users\\Freakman\\.agents",
+                             "unattended":  false,
+                             "host_decision_applied":  false,
+                             "host_decision_kind":  null,
+                             "host_decision_action":  null,
+                             "route_script_path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\vibe\\scripts\\router\\resolve-pack-route.ps1"
+                         },
+    "route_snapshot":  {
+                           "task_type":  "coding",
+                           "route_mode":  "no_local_candidate"
+                       },
+    "skill_routing":  {
+                          "schema_version":  "simplified_skill_routing_v1",
+                          "candidates":  [
+                                             {
+                                                 "skill_id":  "python-pro",
+                                                 "skill_md_path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                                                 "reason":  "Expert modern Python development covering async MTProto architecture, typing, and system integration.",
+                                                 "task_slice":  "Build robust Python Telegram bot with Telethon MTProto client, downloader engine, and command handlers.",
+                                                 "state":  "candidate",
+                                                 "dispatch_phase":  "not_applicable",
+                                                 "parallelizable_in_root_xl":  false,
+                                                 "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md",
+                                                 "skill_root":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro",
+                                                 "bounded_role":  "candidate_only",
+                                                 "must_preserve_workflow":  false,
+                                                 "binding_profile":  "candidate_only",
+                                                 "lane_policy":  "none",
+                                                 "write_scope":  "none",
+                                                 "review_mode":  "none",
+                                                 "execution_priority":  0,
+                                                 "required_inputs":  [
+                                                                         "approved module work contract",
+                                                                         "frozen requirement context",
+                                                                         "relevant source files or domain artifacts"
+                                                                     ],
+                                                 "expected_outputs":  [
+                                                                          "bounded module findings or code changes",
+                                                                          "verification notes aligned with the assigned Skill and module acceptance criteria"
+                                                                      ],
+                                                 "verification_expectation":  "Follow the assigned SKILL.md and satisfy the module acceptance criteria.",
+                                                 "progressive_load_policy":  [
+                                                                                 "Read the assigned C:\\Users\\Freakman\\.gemini\\config\\skills\\python-pro\\SKILL.md before starting the module."
+                                                                             ],
+                                                 "legacy_source":  "agent_skill_organization"
+                                             },
+                                             {
+                                                 "skill_id":  "test-driven-development",
+                                                 "skill_md_path":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md",
+                                                 "reason":  "Enforce failing-first and regression-free testing discipline for all core behaviors.",
+                                                 "task_slice":  "Design and execute TDD test harness covering parser, story 24h filtering, and download orchestrator.",
+                                                 "state":  "candidate",
+                                                 "dispatch_phase":  "not_applicable",
+                                                 "parallelizable_in_root_xl":  false,
+                                                 "skill_entrypoint":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md",
+                                                 "skill_root":  "C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development",
+                                                 "bounded_role":  "candidate_only",
+                                                 "must_preserve_workflow":  false,
+                                                 "binding_profile":  "candidate_only",
+                                                 "lane_policy":  "none",
+                                                 "write_scope":  "none",
+                                                 "review_mode":  "none",
+                                                 "execution_priority":  0,
+                                                 "required_inputs":  [
+                                                                         "approved module work contract",
+                                                                         "frozen requirement context",
+                                                                         "relevant source files or domain artifacts"
+                                                                     ],
+                                                 "expected_outputs":  [
+                                                                          "bounded module findings or code changes",
+                                                                          "verification notes aligned with the assigned Skill and module acceptance criteria"
+                                                                      ],
+                                                 "verification_expectation":  "Follow the assigned SKILL.md and satisfy the module acceptance criteria.",
+                                                 "progressive_load_policy":  [
+                                                                                 "Read the assigned C:\\Users\\Freakman\\.gemini\\config\\skills\\test-driven-development\\SKILL.md before starting the module."
+                                                                             ],
+                                                 "legacy_source":  "agent_skill_organization"
+                                             }
+                                         ],
+                          "rejected":  [
+
+                                       ]
+                      },
+    "storage":  {
+                    "workspace_root":  "D:\\projects\\private bot",
+                    "workspace_sidecar_root":  "D:\\projects\\private bot\\.vibeskills",
+                    "project_descriptor_path":  "D:\\projects\\private bot\\.vibeskills\\project.json",
+                    "artifact_root":  "D:\\projects\\private bot",
+                    "artifact_root_source":  "explicit_override",
+                    "default_workspace_sidecar_artifact_root":  false,
+                    "host_sidecar_root":  "C:\\Users\\Freakman\\.agents\\.vibeskills",
+                    "workspace_memory_identity_root":  "D:\\projects\\private bot\\.vibeskills\\project.json",
+                    "workspace_memory_identity_scope":  "workspace",
+                    "workspace_memory_driver_contract":  "workspace_shared_memory_v1",
+                    "workspace_memory_logical_owners":  [
+                                                            "state_store",
+                                                            "serena",
+                                                            "ruflo",
+                                                            "cognee"
+                                                        ]
+                },
+    "divergence_shadow":  {
+                              "explicit_runtime_override_applied":  true,
+                              "explicit_runtime_override_reason":  "governed_runtime_entry",
+                              "governance_scope_mismatch":  false
+                          }
+}
